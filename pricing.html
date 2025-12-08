@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pricing | Photobylorna</title>
+  <meta name="description" content="Simple photography pricing and packages." />
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav row space wrap">
+      <a class="brand" href="index.html"><span class="dot"></span><span data-brand>Photobylorna</span></a>
+      <nav class="links">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="btn primary" data-booking href="#">Book a session</a>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h2>Pricing</h2>
+      <p>Replace the blanks with your real prices and details.</p>
+
+      <div class="grid">
+        <div class="card feature col-4">
+          <h3>Mini Session</h3>
+          <p><strong>$___</strong> • 20–30 minutes • 10 edited photos</p>
+          <p>Great for quick portraits, headshots, or couples.</p>
+          <a class="btn primary" data-booking href="#">Book</a>
+        </div>
+
+        <div class="card feature col-4">
+          <h3>Standard Session</h3>
+          <p><strong>$___</strong> • 60 minutes • 25+ edited photos</p>
+          <p>Most popular. More variety, multiple looks/locations.</p>
+          <a class="btn primary" data-booking href="#">Book</a>
+        </div>
+
+        <div class="card feature col-4">
+          <h3>Event Coverage</h3>
+          <p><strong>From $___</strong> • 2 hours+ • gallery delivery</p>
+          <p>Birthdays, small events, corporate, etc.</p>
+          <a class="btn" href="contact.html">Request a quote</a>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="card feature">
+        <h3>What’s included</h3>
+        <p>
+          Professional editing, online gallery delivery, and personal usage rights.
+          For commercial/licensing, ask on the contact page.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container row space wrap">
+      <small>© <span id="y"></span> <span data-brand>Photobylorna</span></small>
+      <small><a data-booking href="#">Booking</a></small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

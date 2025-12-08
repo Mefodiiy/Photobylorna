@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio | Photobylorna</title>
+  <meta name="description" content="Photography portfolio: portraits, couples, and events." />
+  <link rel="icon" href="favicon.jpg" type="image/jpg">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav row space wrap">
+      <a class="brand" href="index.html"><span class="dot"></span><span data-brand>Photobylorna</span></a>
+      <nav class="links">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="btn primary" data-booking href="#">Book a session</a>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <p>Click any image to view larger. Use the filters to narrow by type.</p>
+
+      <div class="filters">
+        <button class="chip active" data-filter="all" type="button">All</button>
+        <button class="chip" data-filter="lifestyle" type="button">Lifestyle</button>
+        <button class="chip" data-filter="wedding" type="button">Wedding</button>
+        <button class="chip" data-filter="family" type="button">Family</button>
+        <button class="chip" data-filter="graduate" type="button">Graduate</button>
+        <button class="chip" data-filter="elopement" type="button">Elopement</button>
+        <button class="chip" data-filter="portraits" type="button">Portraits</button>
+        <button class="chip" data-filter="couples" type="button">Couples</button>
+        <button class="chip" data-filter="events" type="button">Events</button>
+      </div>
+
+      <div class="gallery" data-gallery>
+        <div class="tile" data-tags="lifestyle" data-full="assets/p01.jpg" data-caption="Portrait session">
+          <img src="assets/p01.jpg" alt="Portrait session" loading="lazy" />
+          <div class="cap">Lifestyle</div>
+        </div>
+
+        <div class="tile" data-tags="wedding" data-full="assets/p02.jpg" data-caption="Natural light portrait">
+          <img src="assets/p02.jpg" alt="Natural light portrait" loading="lazy" />
+          <div class="cap">Wedding</div>
+        </div>
+
+        <div class="tile" data-tags="family" data-full="assets/p03.jpg" data-caption="Couples session">
+          <img src="assets/p03.jpg" alt="Couples session" loading="lazy" />
+          <div class="cap">Family</div>
+        </div>
+
+        <div class="tile" data-tags="elopement" data-full="assets/p04.jpg" data-caption="Engagement vibes">
+          <img src="assets/p04.jpg" alt="Engagement vibes" loading="lazy" />
+          <div class="cap">Elopement</div>
+        </div>
+
+        <div class="tile" data-tags="graduate" data-full="assets/p05.jpg" data-caption="Event coverage">
+          <img src="assets/p05.jpg" alt="Event coverage" loading="lazy" />
+          <div class="cap">Graduate</div>
+        </div>
+
+        <div class="tile" data-tags="portrait" data-full="assets/p06.jpg" data-caption="Details + moments">
+          <img src="assets/p06.jpg" alt="Details and moments" loading="lazy" />
+          <div class="cap">Portrait</div>
+        </div>
+      </div>
+
+      <div class="row wrap" style="margin-top:18px;">
+        <a class="btn primary" data-booking href="#">Book a session</a>
+        <a class="btn" href="contact.html">Ask about a shoot</a>
+      </div>
+    </div>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightboxInner">
+      <img alt="" />
+      <div class="lbBar">
+        <div class="lbCap"></div>
+        <div class="lbBtns">
+          <button class="btn small lbBtn" data-lb-prev type="button">Prev</button>
+          <button class="btn small lbBtn" data-lb-next type="button">Next</button>
+          <button class="btn small lbBtn" data-lb-close type="button">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container row space wrap">
+      <small>© <span id="y"></span> <span data-brand> Photobylorna</span></small>
+      <small><a data-booking href="#">Booking</a></small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

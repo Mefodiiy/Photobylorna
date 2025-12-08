@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact | Photobylorna</title>
+  <meta name="description" content="Contact and booking." />
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav row space wrap">
+      <a class="brand" href="index.html"><span class="dot"></span><span data-brand>Photobylorna</span></a>
+      <nav class="links">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="btn primary" data-booking href="#">Book a session</a>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Fastest option: book online. Questions: send a message.</p>
+
+      <div class="grid">
+        <div class="card form col-6">
+          <h3 style="margin:0 0 8px;">Send a message</h3>
+
+          <!-- Replace with your real Formspree endpoint -->
+          <form action="https://formspree.io/f/xblnazye" method="POST">
+            <label for="name">Name</label>
+            <input id="name" name="name" autocomplete="name" required />
+
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" autocomplete="email" required />
+
+            <label for="type">Session type</label>
+            <input id="type" name="type" placeholder="Portraits / Couples / Event" />
+
+            <label for="date">Preferred date(s)</label>
+            <input id="date" name="date" placeholder="Example: Jan 12 or weekend evenings" />
+
+            <label for="msg">Details</label>
+            <textarea id="msg" name="message" required placeholder="Location idea, vibe, how many people, etc."></textarea>
+
+            <div class="row wrap" style="margin-top:12px;">
+              <button class="btn primary" type="submit">Send</button>
+              <a class="btn" data-booking href="#">Or book directly</a>
+            </div>
+
+            <div class="help">
+              
+            </div>
+          </form>
+        </div>
+
+        <div class="card feature col-6">
+          <h3>Booking</h3>
+          <p>Pick a time and lock it in:</p>
+          <p><a class="btn primary" data-booking href="#">Book a session</a></p>
+
+          <hr />
+
+          <h3>Other ways</h3>
+          <p>
+            Email: <a href="mailto:you@example.com">you@example.com</a><br/>
+            Location: <span data-location>Your City, State</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container row space wrap">
+      <small>© <span id="y"></span> <span data-brand> Photobylorna</span></small>
+      <small><a data-booking href="#">Booking</a></small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

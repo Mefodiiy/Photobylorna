@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Photobylorna</title>
+  <meta name="description" content="Photography in your area. Portraits, couples, and events. Book a session online." />
+  <meta name="theme-color" content="#0b0c10" />
+
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css" />
+
+  <meta property="og:title" content="Photobylorna" />
+  <meta property="og:description" content="Portraits, couples, events. Book a session online." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/hero.jpg" />
+</head>
+<body>
+  <header>
+    <div class="container nav row space wrap">
+      <a class="brand" href="index.html"><span class="dot"></span><span data-brand>Photobylorna</span></a>
+      <nav class="links">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="btn primary" data-booking href="#">Book a session</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container heroGrid">
+        <div class="card heroCard">
+          <div class="kicker">Photography • <span data-location>Your City, State</span></div>
+          <h1>Clean, natural photos that look like you.</h1>
+          <p>
+            Portraits, couples, and events. Fast turnaround, straightforward pricing, and a simple booking process.
+          </p>
+
+          <div class="row wrap" style="gap:10px; margin-top:12px;">
+            <a class="btn primary" data-booking href="#">Book now</a>
+            <a class="btn" href="portfolio.html">View portfolio</a>
+            <a class="btn ghost" href="contact.html">Ask a question</a>
+          </div>
+
+          <div class="badges">
+            <div class="badge">48–72h sneak peeks</div>
+            <div class="badge">Curated editing</div>
+            <div class="badge">Easy online booking</div>
+          </div>
+        </div>
+
+        <div class="card heroMedia">
+          <img src="assets/hero.jpg" alt="Featured photography" loading="eager" />
+          <div class="overlay"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>What I shoot</h2>
+        <div class="grid">
+          <div class="card feature col-4">
+            <h3>Portraits</h3>
+            <p>Outdoor or studio-style looks. Direction included so you don’t feel awkward.</p>
+          </div>
+          <div class="card feature col-4">
+            <h3>Couples</h3>
+            <p>Natural prompts, not stiff poses. Great for anniversaries and engagements.</p>
+          </div>
+          <div class="card feature col-4">
+            <h3>Events</h3>
+            <p>Coverage that captures moments and details without getting in the way.</p>
+          </div>
+        </div>
+
+        <div class="row wrap" style="margin-top:16px;">
+          <a class="btn primary" data-booking href="#">Check availability</a>
+          <a class="btn" href="pricing.html">See pricing</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container row space wrap">
+      <small>© <span id="y"></span> <span data-brand>Photobylorna</span></small>
+      <small><a href="contact.html">Contact</a> • <a data-booking href="#">Booking</a></small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

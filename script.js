@@ -1,7 +1,7 @@
 // ====== CONFIG: change these ======
 const CONFIG = {
   brand: "Photobylorna",
-  location: "Tacomaa, Washington",
+  location: "Tacoma, Washington",
   bookingUrl: "https://calendar.app.google/rSUH5YjP529eWbVS6",
 };
 
